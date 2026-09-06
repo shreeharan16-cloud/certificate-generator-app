@@ -178,10 +178,10 @@ def get_history():
 # --- FONT SETUP ---
 FONTS_DIR = "fonts"
 FONT_URLS = {
-    "Roboto (Sans-Serif)": "https://github.com/google/fonts/raw/main/apache/roboto/Roboto-Regular.ttf",
-    "Montserrat (Modern)": "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat-Regular.ttf",
+    "Lato (Sans-Serif)": "https://github.com/google/fonts/raw/main/ofl/lato/Lato-Regular.ttf",
+    "Crimson Text (Serif)": "https://github.com/google/fonts/raw/main/ofl/crimsontext/CrimsonText-Regular.ttf",
     "Great Vibes (Cursive)": "https://github.com/google/fonts/raw/main/ofl/greatvibes/GreatVibes-Regular.ttf",
-    "Playfair Display (Serif)": "https://github.com/google/fonts/raw/main/ofl/playfairdisplay/PlayfairDisplay-Regular.ttf"
+    "Pacifico (Display)": "https://github.com/google/fonts/raw/main/ofl/pacifico/Pacifico-Regular.ttf"
 }
 
 def setup_fonts():
