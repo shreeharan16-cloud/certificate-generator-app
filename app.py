@@ -18,12 +18,12 @@ st.set_page_config(page_title="PTU E-Certificate Generator", layout="wide", page
 def local_css():
     st.markdown("""
     <style>
-    /* Hide Streamlit Header, Toolbar, and Footer */
+    /* Hide Streamlit Footer and Top-Right Menu, but keep Sidebar Toggle */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
-    [data-testid="stHeader"] {display: none;}
-    [data-testid="stToolbar"] {display: none;}
+    [data-testid="stToolbar"] {visibility: hidden;}
+    [data-testid="stHeader"] {background-color: transparent;}
+    [data-testid="stHeader"] > div:last-child {display: none;}
 
     /* Stunning Dark Glassmorphism Theme */
     @keyframes fadeIn {
