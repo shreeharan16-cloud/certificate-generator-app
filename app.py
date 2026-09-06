@@ -21,9 +21,9 @@ def local_css():
     /* Hide Streamlit Footer and Top-Right Menu, but keep Sidebar Toggle */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    [data-testid="stToolbar"] {visibility: hidden;}
-    [data-testid="stHeader"] {background-color: transparent;}
-    [data-testid="stHeader"] > div:last-child {display: none;}
+    .stAppDeployButton {display:none;}
+    [data-testid="stToolbar"] {display: none;}
+    [data-testid="stHeaderActionElements"] {display: none;}
 
     /* Stunning Dark Glassmorphism Theme */
     @keyframes fadeIn {
