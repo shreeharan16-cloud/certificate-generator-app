@@ -18,12 +18,13 @@ st.set_page_config(page_title="PTU E-Certificate Generator", layout="wide", page
 def local_css():
     st.markdown("""
     <style>
-    /* Hide Streamlit Footer and Top-Right Menu, but keep Sidebar Toggle */
+    /* Hide Streamlit Footer and Top-Right Menu, but explicitly FORCE Sidebar Toggle to show */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     .stAppDeployButton {display:none;}
     [data-testid="stToolbar"] {display: none;}
     [data-testid="stHeaderActionElements"] {display: none;}
+    [data-testid="collapsedControl"] {display: flex !important; visibility: visible !important; z-index: 99999 !important;}
 
     /* Stunning Dark Glassmorphism Theme */
     @keyframes fadeIn {
