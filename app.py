@@ -233,11 +233,9 @@ def load_dataframe(file_bytes, file_name):
     else:
         return pd.read_excel(io.BytesIO(file_bytes))
 
-@st.cache_resource
 def load_template_image(file_bytes):
     return Image.open(io.BytesIO(file_bytes))
 
-@st.cache_resource
 def get_font(font_choice, custom_font_bytes, size):
     if custom_font_bytes:
         return ImageFont.truetype(io.BytesIO(custom_font_bytes), size)
@@ -421,7 +419,7 @@ def main():
             )
             
             st.markdown('<div class="preview-img-container">', unsafe_allow_html=True)
-            st.image(preview_img, caption=f"Preview for: {first_name} - {first_college}", use_column_width=False)
+            st.image(preview_img, caption=f"Preview for: {first_name} - {first_college}")
             st.markdown('</div>', unsafe_allow_html=True)
 
             st.header("4. Bulk Generate (ZIP Download)")
